@@ -44,3 +44,6 @@ IfWinExist, Paladins ahk_exe SteamLauncherUI.exe
     WinActivate
     SendInput %username%{Tab}%password%{Enter}
 }
+
+; click play Button
+; TODO
