@@ -3,6 +3,8 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+#Include FindClick.ahk
+
 ; ask for login info if doesn't exist
 IfNotExist logins.txt
 {
@@ -43,7 +45,11 @@ IfWinExist, Paladins ahk_exe SteamLauncherUI.exe
 {
     WinActivate
     SendInput %username%{Tab}%password%{Enter}
+    FindClick("play.png", "r w, 10*1000")
+    FindClick("claim.png", "w, 5*60*1000")
 }
 
-; click play Button
+; exit if game no longer open
 ; TODO
+
+ExitApp
