@@ -2,4 +2,4 @@
 
 set the launcher to not remember your password
 
-![launcher](launcher.png)
+![launcher](login.png)
