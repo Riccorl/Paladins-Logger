@@ -3,7 +3,7 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-#Include FindClick.ahk
+#Include FindClick.ahk  ; usefull lib for clicking images
 
 ; ask for login info if doesn't exist
 IfNotExist logins.txt
