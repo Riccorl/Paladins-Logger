@@ -48,10 +48,10 @@ IfWinExist, Paladins ahk_exe SteamLauncherUI.exe
     FindClick("play.png", "r w, 10*1000")
 }
 
-WinWait, ahk_exe Paladins.exe
+WinWait, Chaos ahk_exe Paladins.exe
 WinActivate
 ; TODO: click OK.png n times until claim.png or nothing appears
-FindClick("claim.png", "r w, 5*60*1000")
+FindClick("claim.png", "w, 5*60*1000")
 
 ; exit if game no longer open
 ; TODO
